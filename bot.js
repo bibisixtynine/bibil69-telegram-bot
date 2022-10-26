@@ -1,4 +1,4 @@
-// server.js
+// server.js modified from VS 221026-14:57 with new branch dev then glitch
 // a minimalistic Telegram bot using the grammy dependency
 
 // DATA
@@ -11,7 +11,7 @@ import { help } from "./data.js"
 
 import { Bot } from "grammy";
 
-const  BOT_TOKEN  = '';
+const { BOT_TOKEN } = process.env;
 if (!BOT_TOKEN) throw new Error('"BOT_TOKEN" env var is required!');
 
 console.log("");
@@ -20,7 +20,7 @@ console.log("############### BOT RE-STARTED ###############");
 console.log("##############################################");
 console.log("");
 
-const bot = new Bot(BOT_TOKEN);
+const bot = new Bot(process.env.BOT_TOKEN);
 
 bot.command( 'start', ctx => {
   let first_name = ctx.update.message.from.first_name;
@@ -43,7 +43,7 @@ bot.command("oldschool", ctx => ctx.reply("Hello"));
 
 bot.command("test", ctx => {
   console.log(`${ctx.update.message.from.first_name} started a new test`)
-  ctx.reply("🫥 this is a new teest !")
+  ctx.reply("🫥 this is a new test !")
   ctx.reply("1+3+2 = ?")
 })
 
