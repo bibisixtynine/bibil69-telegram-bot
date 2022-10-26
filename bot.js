@@ -1,4 +1,4 @@
-// server.js modified from VS 221026-14:57 with new branch dev then glitch
+// server.js mod from glitch 1608
 // a minimalistic Telegram bot using the grammy dependency
 
 // DATA
