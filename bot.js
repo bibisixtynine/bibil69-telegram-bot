@@ -1,5 +1,6 @@
 // server.js
 // from glitch
+// from vs
 
 // DATA
 
@@ -26,7 +27,7 @@ bot.command( 'start', ctx => {
   let first_name = ctx.update.message.from.first_name;
   let id = ctx.update.message.from.id;
   console.log(`=> new client : ${first_name} , id : ${id} !`);
-  ctx.reply(`🤓 Hello dear ${first_name}, type /help to list what I can do for you !`);
+  ctx.reply(`🤓 Hello dear sir ${first_name}, type /help to list what I can do for you !`);
 });
 
 bot.command( 'help', ctx => {
