@@ -1,7 +1,4 @@
 // server.js
-// mod from glitch 1608
-// mod from vs 1819
-// a minimalistic Telegram bot using the grammy dependency
 
 // DATA
 
