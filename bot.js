@@ -5,12 +5,12 @@
 
 // DATA
 
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 import { help } from "./data.js"
 
-
 // CODE
-
 import { Bot } from "grammy";
 
 const { BOT_TOKEN } = process.env;
@@ -28,7 +28,7 @@ bot.command( 'start', ctx => {
   let first_name = ctx.update.message.from.first_name;
   let id = ctx.update.message.from.id;
   console.log(`=> new client : ${first_name} , id : ${id} !`);
-  ctx.reply(`🤓 Hello ${first_name}, type /help to list what I can do for you !`);
+  ctx.reply(`🤓 Hello dear ${first_name}, type /help to list what I can do for you !`);
 });
 
 bot.command( 'help', ctx => {
