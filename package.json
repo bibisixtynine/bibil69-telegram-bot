@@ -8,7 +8,8 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "grammy": "^1.11.2"
+    "grammy": "^1.11.2",
+    "dotenv": "^16.0.3"
   },
   "engines": {
     "node": "v16.14.2"
